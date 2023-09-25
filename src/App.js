@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "./App.css";
 import Display from "./Components/Display";
-import ToggleMode from "./Components/ToggleMode";
 
 function App() {
   const [dark, setdark] = useState(true);
@@ -47,7 +46,6 @@ function App() {
 
   return (
     <>
-      <ToggleMode />
       <Display
         flag={flag}
         reset={handleReset}
